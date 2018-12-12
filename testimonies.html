@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <!-- <form id=form name="myForm" onsubmit="validateForm()"> -->
+        <input type="text" value="" id="input" >
+        <input type="text" value="" id="age" >
+        <input type="submit" value="Submit" id="button">
+    <!-- </form> -->
+</body>
+<script>
+    //correct code
+    // var input = document.getElementById('input');
+    // var button = document.getElementById('button');
+    // var array = [];
+    // button.onclick = function(){
+    // array.push(input.value);
+    // input.value= "";
+    // console.log(array)
+    // }
+   //
+
+
+
+    //Register
+    // var input = document.getElementById('input');
+    // var age = document.getElementById('age');
+    // var button = document.getElementById('button');
+    var  database1 = [
+        // {
+        //     name1: '',
+        //     age1: ''
+        // }
+    ]
+    // var name = prompt('What is your name?');
+    // var age = prompt('What is your age?');
+//     var obj ={};
+   
+//     function reg(nameVal,ageVal) {
+//         obj.name1 = nameVal.value;
+//         obj.age1 = ageVal.value;
+//         database1.push(obj)
+//    }
+   button.onclick = function() {
+    // console.log(obj);
+    reg(input,age);
+   }
+
+   
+    //
+   //Signin
+   var database = [
+       {
+           username: "Sammy",
+           password: '1234'
+       },
+       {
+           username: "Sam",
+           password: '12'
+       },
+       {
+           username: "Sa",
+           password: '123'
+       }
+   ]
+   var newsFeed = [
+       {
+           username: 'Sammy',
+           timeline: "i am so loving this"
+       },
+       {
+           username: 'Sam',
+           timeline: "i am so loved"
+       },
+       {
+           username: 'Sa',
+           timeline: "i am so cute"
+       }
+   ]
+   var user = prompt('What is your username?');
+   var pass = prompt('What is your password?');
+  
+   function checkEntry(userName, passWord) {
+        for ( i = 0; i <= database.length; i++) {
+            if( database[i].username === userName && database[i].password === passWord) {
+        //    console.log()
+           return  console.log(newsFeed[i].username, newsFeed[i].timeline)
+        }
+           
+            
+        }
+       return false
+   }
+   function isValid(userName, passWord) {
+       console.log(checkEntry(userName, passWord))
+   }
+
+   checkEntry(user,pass);
+  
+   //
+</script>
+</html>
